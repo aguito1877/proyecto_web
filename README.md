@@ -6,5 +6,5 @@ Proyecto de practica para desarrollar un sitio web con HTML5, JS, BBDD entre otr
 https://fontawesome.com/icons
 *se debe incluir por lo general el archivo all.css e incluir la carpeta de webfonts/
 *se agrega contenido desde google fonts
-
+se busca las fuentes a usar, se copia el enlace en el header y se tiene el script de como usar las fuentes en las hojs de estilo
 
