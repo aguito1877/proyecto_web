@@ -1,0 +1,200 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <!-- se agrega fuentes desde google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header class="site-header">
+    <div class="hero">
+        <div class="contenido-header">
+          <nav class="redes-sociales">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </nav>
+          <div class="informacion-evento">
+            <div class="clearfix"> 
+                <p class="fecha"><i class="fas fa-calendar-alt"></i>30-06-2019</p>
+                <p class="ciudad"><i class="fas fa-map-marker-alt"></i>Quito</p>
+            
+            </div>
+            <h1 class="nombre-sitio">Sito de Conferencias</h1>
+            <p class="slogan">La mejor conferencia de <span>programacion</span></p>
+        
+          </div> <!--fin de informacion del eveto-->
+            </div>
+    </div><!--se cierra el hero-->
+    
+
+  </header>
+  <div class="barra">
+    <div class="contenedor clearfix">
+      <div class="logo">
+        <img src="img/logo.svg" alt="logo sitio web">
+      </div>
+
+      <div class="menu-movil">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navegacion-principal clearfix">
+        <a href="#">Conferencia</a>
+        <a href="#">Calendario</a>
+        <a href="#">Invitados</a>
+        <a href="registro.html">Reservaciones</a>
+      </nav>
+
+    </div> <!-- .contenedor -->
+  </div> <!-- .barra -->
+
+  <!-- comienzo del area de registro -->
+  <section class="seccion contenedor">
+      <h2>Registro de Usuarios</h2>
+      <form id="registro" class="registro" action="index.html" method="POST">
+            <div id="datos_usuario" class="registro caja clearfix">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="tu nombre"/>
+
+                </div>
+
+                <div class="campo">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="tu apellido"/>
+    
+                    </div>
+
+                    <div class="campo">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" placeholder="tu email"/>
+        
+                        </div>
+                        <div id="error"> </div>
+            </div><!-- fin_datos_usuario -->
+
+            <div id="paquetes" class="paquetes">
+                <h3>Elige el numero de boletos</h3>
+
+                <ul class="lista-precios clearfix">
+                        <li>
+                          <div class="tabla-precio">
+                            <h3>Pase por dia (viernes)</h3>
+                            <p class="numero">$30</p>
+                            <ul>
+                              <li><i class="fas fa-check"></i>Bocadillos Gratis</li>
+                              <li><i class="fas fa-check"></i>Todas las conferencias</li>
+                              <li><i class="fas fa-check"></i>Todos los talleres</li>
+                            </ul>
+                            <div class="orden">
+                                <label for="pase_dia">Boletos Desados: </label>
+                                <input type="number" min="0" id="pase_dia" size="3" placeholder="0"/>
+                            </div>
+                          </div>
+                        </li>
+                
+                        <li>
+                          <div class="tabla-precio">
+                            <h3>Todos los dias</h3>
+                            <p class="numero">$50</p>
+                            <ul>
+                              <li><i class="fas fa-check"></i>Bocadillos Gratis</li>
+                              <li><i class="fas fa-check"></i>Todas las conferencias</li>
+                              <li><i class="fas fa-check"></i>Todos los talleres</li>
+                            </ul>
+                            <div class="orden">
+                                    <label for="pase_completo">Boletos Desados: </label>
+                                    <input type="number" min="0" id="pase_completo" size="3" placeholder="0"/>
+                                </div>
+                          </div>
+                        </li>
+                
+                        <li>
+                          <div class="tabla-precio">
+                            <h3>Pase por dos dias (viernes y sabado)</h3>
+                            <p class="numero">$45</p>
+                            <ul>
+                              <li><i class="fas fa-check"></i>Bocadillos Gratis</li>
+                              <li><i class="fas fa-check"></i>Todas las conferencias</li>
+                              <li><i class="fas fa-check"></i>Todos los talleres</li>
+                            </ul>
+                            <div class="orden">
+                                    <label for="pase_dosdias">Boletos Desados: </label>
+                                    <input type="number" min="0" id="pase_dosdias" size="3" placeholder="0"/>
+                                </div>
+                          </div>
+                        </li>
+                      </ul>
+
+            </div><!-- paquetes -->
+        </form>
+  </section>
+
+    <footer class="site-footer">
+      <div class="contenedor clearfix">
+        <div class="footer-informacion">
+          <h3>Sobre <span>conferencia</span></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus reprehenderit nobis repellendus porro nam aut beatae quae atque architecto laboriosam eos vitae asperiores deserunt maiores perferendis repudiandae, expedita soluta!</p>
+        </div>
+        <div class="ultimos-tweets">
+            <h3>Ultimos <span>tweets</span></h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolores error quisquam consequatur non natus cum eos vel autem tenetur delectus aliquam optio corporis nesciunt voluptatibus explicabo unde alias officia?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolores error quisquam consequatur non natus cum eos vel autem tenetur delectus aliquam optio corporis nesciunt voluptatibus explicabo unde alias officia?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolores error quisquam consequatur non natus cum eos vel autem tenetur delectus aliquam optio corporis nesciunt voluptatibus explicabo unde alias officia?</li>
+            </ul>
+        </div>
+        <div class="menu">
+            <h3>redes <span>sociales</span></h3>
+            <nav class="redes-sociales">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </nav>
+        </div>
+      </div>
+      <p class="copyright">Todos los derechos Reservados CONFERENCIA 2019</p>
+    </footer>
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
